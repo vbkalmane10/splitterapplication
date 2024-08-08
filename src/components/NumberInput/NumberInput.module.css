@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html,
+body {
+  font-family: "Space Mono", monospace;
+  color: #5d6b6c;
+}
+
+.numberInput {
+  display: flex;
+  flex-direction: column;
+  font-family: "Space Mono", monospace;
+  color: #5d6b6c;
+  width: 100%;
+  max-width: 526px;
+}
+
+.input-container {
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem;
+  border-radius: 0.5rem;
+  background-color: #f7fafd;
+}
+
+.input-container:hover:not(.input-error) {
+  border: 2px solid black;
+}
+
+.input-container .icon {
+  pointer-events: none;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+.number-input {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 4px 14px;
+  font-family: "Space Mono", monospace;
+  text-align: end;
+  border: none;
+  outline: none;
+  color: #5d6b6c;
+  flex-grow: 0.8;
+  background: none;
+}
+
+.number-input-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.error-field {
+  color: red;
+  font-weight: 700;
+  height: 1rem;
+  visibility: hidden;
+  margin-top: 0.5rem;
+}
+
+.input-error + .error-field {
+  visibility: visible;
+  color: red;
+}
+
+.input-error {
+  border: 2px solid red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .numberInput {
+    max-width: 500px;
+  }
+
+  .number-input {
+    font-size: 28px;
+    padding: 6px 18px;
+  }
+
+  .number-input-label {
+    font-size: 1.125rem;
+  }
+  .number-input .icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .numberInput {
+    max-width: 400px;
+  }
+
+  .number-input {
+    font-size: 24px;
+    padding: 5px 16px;
+  }
+
+  .number-input-label {
+    font-size: 1rem;
+  }
+  .number-input .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .numberInput {
+    max-width: inherit;
+  }
+
+  .number-input {
+    font-size: 20px;
+    padding: 4px 14px;
+  }
+
+  .number-input-label {
+    font-size: 0.875rem;
+  }
+  .error-field {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .numberInput {
+    max-width: inherit;
+  }
+
+  .number-input {
+    font-size: 18px;
+    padding: 3px 12px;
+  }
+
+  .number-input-label {
+    font-size: 0.75rem;
+  }
+  .error-field {
+    font-size: 10px;
+  }
+}
