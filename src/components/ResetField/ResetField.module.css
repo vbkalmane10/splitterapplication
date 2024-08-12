@@ -5,7 +5,7 @@
   align-items: center;
   margin-bottom: 64px;
   grid-template-columns: 1fr auto;
-  font-family: "Space Mono", monospace;
+  font-family: var(--font-family);
 }
 
 /* Mobile (0-550px) */
@@ -15,12 +15,12 @@
   }
 
   .price {
-    font-size: 30px;
+    font-size: var(--font-family-larger);
     line-height: 3rem;
   }
 
   .tip_amount {
-    font-size: 14px;
+    font-size: var(--font-family-small);
     line-height: 1.2rem;
   }
 }
@@ -38,7 +38,7 @@
   }
 
   .tip_amount {
-    font-size: 18px;
+    font-size: var(--font-family-medium);
     line-height: 1.5rem;
   }
 }
@@ -56,7 +56,7 @@
   }
 
   .tip_amount {
-    font-size: 20px;
+    font-size: var(--font-family-large);
     line-height: 1.7rem;
   }
 }
@@ -74,7 +74,7 @@
   }
 
   .tip_amount {
-    font-size: 20px;
+    font-size: var(--font-family-larger);
     line-height: 1.7rem;
   }
 }
