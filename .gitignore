@@ -164,3 +164,7 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+*.svg
+package.json
+package-lock.json
+tsconfig.app.js
