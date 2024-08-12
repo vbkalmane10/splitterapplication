@@ -13,6 +13,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://vbkalmane10.github.io/splitter",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

@@ -12,7 +12,7 @@ body {
   font-family: "Space Mono", monospace;
   color: #5d6b6c;
   width: 100%;
-  max-width: 526px;
+  /* max-width: 526px; */
 }
 
 .input-container {
@@ -20,7 +20,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0rem;
   border-radius: 0.5rem;
   background-color: #f7fafd;
 }
@@ -38,29 +37,30 @@ body {
 }
 
 .number-input {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.5;
-  padding: 4px 14px;
+  line-height: 1.5rem;
+  padding: 10px 14px;
   font-family: "Space Mono", monospace;
   text-align: end;
   border: none;
   outline: none;
   color: #5d6b6c;
-  flex-grow: 0.8;
+  flex-grow: 0.9;
   background: none;
 }
 
 .number-input-label {
   font-weight: 600;
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
+  padding: 0px 0px 0px 6px;
+  font-size: 20px;
+  width: fit-content;
 }
 
 .error-field {
   color: red;
   font-weight: 700;
-  height: 1rem;
+  height: 0.5rem;
   visibility: hidden;
   margin-top: 0.5rem;
 }
@@ -82,9 +82,9 @@ input::-webkit-inner-spin-button {
 
 /* Media Queries */
 @media (max-width: 1200px) {
-  .numberInput {
+  /* .numberInput {
     max-width: 500px;
-  }
+  } */
 
   .number-input {
     font-size: 28px;
@@ -102,7 +102,7 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 992px) {
   .numberInput {
-    max-width: 400px;
+    max-width: inherit;
   }
 
   .number-input {
@@ -126,7 +126,7 @@ input::-webkit-inner-spin-button {
 
   .number-input {
     font-size: 20px;
-    padding: 4px 14px;
+    padding: 4px 0px;
   }
 
   .number-input-label {

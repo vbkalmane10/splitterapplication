@@ -3,7 +3,7 @@
   color: #feffff;
   border-radius: 16px;
   padding: 30px;
-  width: 566px;
+  max-width: 566px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -17,11 +17,11 @@
   border-radius: 7px;
   font-size: 24px;
   cursor: pointer;
-  margin-top: 40px; /* Adjust margin-top to a more reasonable value */
+  margin-top: 40px;
   font-weight: 700;
   color: #00474b;
-  text-align: center; /* Center align text */
-  padding: 12px; /* Add padding for better click area */
+  text-align: center;
+  padding: 12px;
 }
 
 /* Media Queries */

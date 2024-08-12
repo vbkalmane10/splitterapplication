@@ -1,4 +1,5 @@
-import "./SelectTip.css";
+import React from "react";
+import styles from "./SelectTip.module.css";
 
 interface SelectTipProps {
   /**
@@ -15,24 +16,27 @@ interface SelectTipProps {
   onSelect: (value: number) => void;
 
   selectedTip: number | null;
+  customError: string | undefined;
 }
 
 export function SelectTip(props: SelectTipProps) {
   const handleButtonClick = (value: number) => {
     props.onSelect(value);
   };
+
   const handleCustomInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     const customValue = parseFloat(event.target.value);
     props.onSelect(customValue);
   };
+
   return (
-    <div className="tip-selector">
-      <label className="tip-label">{props.label}</label>
-      <div className="tip-buttons">
+    <div className={styles.tipSelector}>
+      <label className={styles.tipLabel}>{props.label}</label>
+      <div className={styles.tipButtons}>
         {props.tipValues.map((value, index) => (
           <button
             key={index}
-            className={`tip-button ${props.selectedTip === value ? "selected" : ""}`}
+            className={`${styles.tipButton} ${props.selectedTip === value ? styles.tipButtonSelected : ""}`}
             onClick={() => handleButtonClick(value)}
           >
             {value}%
@@ -40,11 +44,16 @@ export function SelectTip(props: SelectTipProps) {
         ))}
         <input
           type="number"
-          className="tip-button custom"
-          placeholder="Custom "
+          className={`${styles.tipButton} ${styles.tipButtonCustom}`}
+          placeholder="Custom"
           onChange={handleCustomInput}
         />
       </div>
+      <p
+        className={`${styles.customError} ${props.customError ? styles.visible : ""}`}
+      >
+        {props.customError}
+      </p>
     </div>
   );
 }

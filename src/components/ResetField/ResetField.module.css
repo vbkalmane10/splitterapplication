@@ -15,12 +15,12 @@
   }
 
   .price {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 3rem;
   }
 
   .tip_amount {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2rem;
   }
 }
@@ -64,18 +64,18 @@
 /* Desktop (1500px and above) */
 @media (min-width: 1501px) {
   .price_div {
-    grid-template-columns: 1fr auto; /* Two-column layout for desktops */
-    margin-bottom: 64px; /* Margin for desktops */
+    grid-template-columns: 1fr auto;
+    margin-bottom: 64px;
   }
 
   .price {
-    font-size: 48px; /* Font size for desktops */
-    line-height: 4.4rem; /* Line height for desktops */
+    font-size: 48px;
+    line-height: 4.4rem;
   }
 
   .tip_amount {
-    font-size: 20px; /* Font size for desktops */
-    line-height: 1.7rem; /* Line height for desktops */
+    font-size: 20px;
+    line-height: 1.7rem;
   }
 }
 

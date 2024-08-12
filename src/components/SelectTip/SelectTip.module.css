@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-.tip-selector {
+.tipSelector {
   width: 100%;
   margin: 0;
   padding-top: 1.25rem;
@@ -9,23 +9,24 @@
   margin-bottom: 57px;
 }
 
-.tip-label {
+.tipLabel {
   font-size: 1.25rem;
   font-weight: 700;
   font-family: "Space Mono", monospace;
   line-height: 1rem;
   font-size: 20px;
   font-weight: 700;
+  padding: 0px 10px 0px 0px;
 }
 
-.tip-buttons {
+.tipButtons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
   margin-top: 1rem;
 }
 
-.tip-button {
+.tipButton {
   background-color: #00474b;
   color: #feffff;
   border: none;
@@ -39,54 +40,64 @@
   text-align: center;
   padding: 0.625rem;
 }
-.tip-button.selected {
+.tipButtonSelected {
   background-color: #26c2ad;
   color: white;
 }
-.tip-button.custom {
-  width: calc(100% - 2px);
-  height: 100%;
+.tipButtonCustom {
+  width: calc(100% - 5px);
   padding: 0 5px 0 0;
-
   border: none;
   border-radius: 5px;
   font-size: 15px;
-  text-align: end;
+  text-align: center;
   font-size: 30px;
   background-color: #f3f8fb;
   color: black;
 }
-.tip-button:hover {
+
+.customError {
+  color: red;
+  font-weight: 700;
+  height: 0.5rem;
+  visibility: hidden;
+  margin-top: 0.5rem;
+}
+.customError {
+  visibility: visible;
+  color: red;
+}
+.tipButtonHover:hover {
   background-color: rgb(144, 143, 143);
 }
 @media (max-width: 768px) {
-  .tip-buttons {
+  .tipButtons {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .tip-button {
+  .tipButton {
     font-size: 24px;
     line-height: 2rem;
     padding: 0.5rem;
   }
 
-  .tip-label {
+  .tipLabel {
     font-size: 18px;
   }
 }
 
-@media (max-width: 480px) {
-  .tip-buttons {
-    grid-template-columns: 1fr;
-  }
-
-  .tip-button {
+@media (max-width: 550px) {
+  .tipButton {
     font-size: 20px;
     line-height: 1.5rem;
     padding: 0.5rem;
   }
 
-  .tip-label {
+  .tipLabel {
     font-size: 16px;
+  }
+  .tipButtonCustom {
+    font-size: 20px;
+    width: calc(100% - 18px);
   }
 }
