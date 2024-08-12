@@ -15,12 +15,12 @@
   }
 
   .price {
-    font-size: var(--font-family-larger);
+    font-size: var(--font-size-large);
     line-height: 3rem;
   }
 
   .tip_amount {
-    font-size: var(--font-family-small);
+    font-size: var(--font-size-small);
     line-height: 1.2rem;
   }
 }

@@ -14,6 +14,7 @@ const Template: StoryFn = () => (
       throw new Error("Function not implemented.");
     }}
     selectedTip={null}
+    customError={undefined}
   />
 );
 

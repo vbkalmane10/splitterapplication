@@ -82,9 +82,7 @@ input::-webkit-inner-spin-button {
 
 /* Media Queries */
 @media (max-width: 1200px) {
-  /* .numberInput {
-    max-width: 500px;
-  } */
+ 
 
   .number-input {
     font-size: var(--font-size-larger);
