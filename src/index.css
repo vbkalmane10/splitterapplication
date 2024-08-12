@@ -1,19 +1,28 @@
 :root {
+  --font-family: "Space Mono", monospace;
+  --background-main: #c5e4e7;
+  --background-container: white;
+  --color-splitter: #00474b;
+  --font-size-larger: 28px;
+  --font-size-large: 24px;
+  --font-size-medium: 18px;
+  --font-size-small: 16px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #c5e4e7;
+  background-color: var(--background-main);
 }
 
 .splitter {
-  font-size: 24px;
+  font-size: var(--font-size-large);
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: #00474b;
+  color: var(--color-splitter);
   margin-bottom: 2%;
 }
 
@@ -22,7 +31,7 @@
   flex-direction: row;
   padding: 25px;
 
-  background-color: white;
+  background-color: var(--background-container);
   border-radius: 20px;
 }
 
@@ -52,7 +61,7 @@
     max-width: 526px;
   }
   .splitter {
-    font-size: 24px;
+    font-size: var(--font-size-large);
   }
 }
 
@@ -71,7 +80,7 @@
     margin-right: 0;
   }
   .splitter {
-    font-size: 18px;
+    font-size: var(--font-size-medium);
   }
 }
 
@@ -90,6 +99,6 @@
     margin-right: 0;
   }
   .splitter {
-    font-size: 16px;
+    font-size: var(--font-size-small);
   }
 }

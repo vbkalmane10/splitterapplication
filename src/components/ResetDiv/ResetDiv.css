@@ -1,5 +1,5 @@
 .resetDiv {
-  background-color: #00474b;
+  background-color: var(--color-splitter);
   color: #feffff;
   border-radius: 16px;
   padding: 30px;
@@ -15,11 +15,11 @@
   line-height: 3.2rem;
   letter-spacing: 10%;
   border-radius: 7px;
-  font-size: 24px;
+  font-size: var(--font-size-large);
   cursor: pointer;
   margin-top: 40px;
   font-weight: 700;
-  color: #00474b;
+  color: var(--color-splitter);
   text-align: center;
   padding: 12px;
 }
@@ -31,13 +31,13 @@
   .resetDiv {
     padding: 40px;
     width: 100%;
-    max-width: inherit; /* Adjust max-width for tablets */
+    max-width: inherit;
   }
 
   .buttonDiv {
-    font-size: 20px; /* Adjust font-size for tablets */
-    margin-top: 30px; /* Adjust margin-top for tablets */
-    padding: 10px; /* Adjust padding for tablets */
+    font-size: var(--font-size-medium);
+    margin-top: 30px;
+    padding: 10px;
   }
 }
 
@@ -50,8 +50,8 @@
   }
 
   .buttonDiv {
-    font-size: 18px; /* Adjust font-size for mobile */
-    margin-top: 20px; /* Adjust margin-top for mobile */
-    padding: 8px; /* Adjust padding for mobile */
+    font-size: var(--font-size-small);
+    margin-top: 20px;
+    padding: 8px;
   }
 }
