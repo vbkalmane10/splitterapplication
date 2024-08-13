@@ -82,8 +82,6 @@ input::-webkit-inner-spin-button {
 
 /* Media Queries */
 @media (max-width: 1200px) {
- 
-
   .number-input {
     font-size: var(--font-size-larger);
     padding: 6px 18px;
@@ -142,7 +140,7 @@ input::-webkit-inner-spin-button {
 
   .number-input {
     font-size: var(--font-size-small);
-    padding: 3px 12px;
+    padding: 7px 12px;
   }
 
   .number-input-label {
