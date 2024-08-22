@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/src/assets/fonts/SpaceMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/src/assets/fonts/SpaceMono-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/src/assets/fonts/SpaceMono-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/src/assets/fonts/SpaceMono-BoldItalic.ttf") format("truetype");
+}
+
+:root {
+  --font-family: "Space Mono", monospace;
+  --background-main: #c5e4e7;
+  --background-container: white;
+  --color-splitter: #00474b;
+  --font-size-larger: 28px;
+  --font-size-large: 24px;
+  --font-size-medium: 18px;
+  --font-size-small: 16px;
+}
+
+body {
+  @apply flex flex-col justify-center items-center bg-background-main;
+  font-family: var(--font-family);
+}
+.no-spin-button::-webkit-outer-spin-button,
+.no-spin-button::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
