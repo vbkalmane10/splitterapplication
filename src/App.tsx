@@ -1,5 +1,5 @@
-import React, { useReducer } from "react";
-import "./index.css";
+import { useReducer } from "react";
+import "./App.css";
 import "./components/ResetDiv/ResetDiv.css";
 import "./components/NumberInput/NumberInput.module.css";
 import "./components/SelectTip/SelectTip.module.css";
@@ -147,13 +147,13 @@ export function App() {
     }
   };
   return (
-    <React.StrictMode>
-      <div className="splitter">
-        <span className="first-part">S P L I</span>
-        <span className="second-part">T T E R</span>
+    <div className="flex flex-col items-center justify-center bg-[#c5e4e7] mt-5">
+      <div className="text-2xl font-bold flex flex-col items-center justify-center text-[#00474b] mb-[2%] md:text-lg sm:text-base">
+        <span className="text-2xl">S P L I</span>
+        <span className="text-2xl">T T E R</span>
       </div>
-      <div className="container">
-        <div className="select-container">
+      <div className="grid grid-cols-1 p-6 gap-15 max-w-full bg-white rounded-2xl md:grid-cols-2">
+        <div className=" max-w-[526px]">
           <NumberInput
             value={state.billValue}
             typeofIcon="dollar"
@@ -176,7 +176,7 @@ export function App() {
             error={getPeopleError()}
           />
         </div>
-        <div className="resetDiv">
+        <div className="w-full max-w-[526px] bg-[#00474B] p-10 rounded-xl">
           <ResetField
             label1="Tip Amount"
             label2="person"
@@ -194,6 +194,6 @@ export function App() {
           />
         </div>
       </div>
-    </React.StrictMode>
+    </div>
   );
 }
